@@ -106,7 +106,6 @@ def main():
             image_height, image_width, _ = image.shape
             control_buttons = {
                 'start': {'top_left': (image_width//2 - 100, image_height//2 - 60), 'bottom_right': (image_width//2 + 100, image_height//2 - 10), 'color': (0, 255, 0), 'label': 'Start Game'},
-                'exit': {'top_left': (image_width//2 - 100, image_height//2 + 10), 'bottom_right': (image_width//2 + 100, image_height//2 + 60), 'color': (0, 0, 255), 'label': 'Exit game'}
             }
 
             # Convert the BGR image to RGB
@@ -144,11 +143,7 @@ def main():
                         save_score_to_db(player_name, last_score)
                         break
 
-                    # Check if the index finger tip is over the exit button
-                    if is_over_button((index_tip_x, index_tip_y), control_buttons['exit']):
-                        cap.release()
-                        cv2.destroyAllWindows()
-                        return
+            
 
             # Display the resulting image
             cv2.imshow('MediaPipe Hands Game', image)
