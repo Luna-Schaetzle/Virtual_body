@@ -15,6 +15,7 @@ Willkommen zu Virtual_body, einem Projekt, das es Ihnen ermöglicht, eine virtue
 - [Virtual\_body](#virtual_body)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Programme in der Übersicht](#programme-in-der-übersicht)
+  - [Requirements and libraries in the project](#requirements-and-libraries-in-the-project)
   - [Installation](#installation)
   - [Verwendung](#verwendung)
   - [Projektbeschreibung](#projektbeschreibung)
@@ -37,6 +38,22 @@ Willkommen zu Virtual_body, einem Projekt, das es Ihnen ermöglicht, eine virtue
 - **Test_face_landmarks.py**: Zeigt den Live Stream und die Gesichtspunkte (Landmarks).
 - **Hand_trak_key.py**: Zeigt den Live Stream und verfolgt die Fingerspitzen. Ein virtuelles Keyboard wird dargestellt, auf dem Tasten gedrückt werden, wenn eine Fingerspitze darauf zeigt.
 - **char_full_body_4.py**: Zeigt einen schwarzen Hintergrund und legt Masken auf den Körper, die Hände und das Gesicht im Bild.
+- **Hand_game_4.py**: Zeigt den Live Stream und verfolgt die Fingerspitzen. Ein Spiel wird gestartet, bei dem der Benutzer versuchen muss, die Fingerspitzen auf die richtigen Ziele zu bewegen.
+- **Hand_game_4_w_e.py**: Wie 4 nur gibt es keinen exit button sondern mann muss **[ESC]** drücken.
+- **Hand_game_5.py**: Zeigt den Live Stream und verfolgt die Fingerspitzen. Ein Spiel wird gestartet, bei dem der Benutzer versuchen muss, die Fingerspitzen auf die richtigen Ziele zu bewegen. Mit MYSQL-Datenbank-Integration.
+- **Hand_game_5_sqllite.py**: Zeigt den Live Stream und verfolgt die Fingerspitzen. Ein Spiel wird gestartet, bei dem der Benutzer versuchen muss, die Fingerspitzen auf die richtigen Ziele zu bewegen. Mit SQLite-Datenbank-Integration.
+
+
+## Requirements and libraries in the project
+
+- Python 3.6 or higher
+- OpenCV
+- dlib
+- numpy
+- SQLite (optional, for database integration)
+or
+- MySQL (optional, for database integration)
+
 
 ## Installation
 
@@ -85,5 +102,6 @@ Dieses Projekt steht unter der [GNU General Public License v3.0](https://www.gnu
 Bei Fragen oder Feedback wenden Sie sich bitte an:
 - **Name**: Luna Schätzle
 - **Email**: luna.schaetzle@gmail.com
-- **GitHub**: [Luna-Schaetzle](www.github.com/Luna-Schaetzle)
+- **GitHub**: [Luna-Schaetzle](https://github.com/Luna-Schaetzle)
+- **Website**: [lunaschaetzle.com](https://luna-schaetzle.xyz)
 
